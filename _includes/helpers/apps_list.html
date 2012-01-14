@@ -1,0 +1,25 @@
+<ul>
+
+{% for node in pages_list %}
+	{% if node.group == "app" %}
+
+		<li>
+		<a href="{{ node.url }}">{{ node.title }}</a>
+		{% if appstore_links == "yes" %}
+			(App Store: <a href="{{ node.appstore-en }}">English</a>,
+			<a href="{{ node.appstore-de }}">German</a>)
+		{% endif %}
+		<br>
+		<a href="{{ node.url }}">
+			<img src="/assets/images/{{node.title | downcase | replace: ' ','-' | replace: "'","-"}}.jpg" class="icon-list" alt="Icon of {{node.title}}" title="{{node.title}}" width="40" height="40">
+		</a>
+		{{ node.short-descr }}
+		</li>
+
+	{% endif %}
+{% endfor %}
+
+</ul>
+
+{% assign pages_list = null %}
+{% assign appstore_links = null %}

@@ -1,45 +1,27 @@
 ---
 layout: page
-title: Hello from Jekyll-Bootstrap-Core
-header: This is Jekyll-Bootstrap
+title: Stefan Partusch
 ---
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/jekyll-quick-start.html)
+# Welcome
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllboostrap.com)
+This website points to apps and open source projects I've written. The apps in question are available in the App Store and the open source projects are hosted on GitHub. So this website is primarily for support and additional information.
 
-## Update Author Attributes
+## Apps
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+{% assign pages_list = site.pages %}
+{% assign appstore_links = "no" %}
+{% include helpers/apps_list.html %}
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+Please find support and FAQs in the [support section](support/).
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+## Open Source Projects
 
-    $ rm -rf _posts/core-samples
+* [NASfVI](http://github.com/spartusch/NASfVI)   
+  A server to parse and answer questions in German using Prolog and Apache Lucene. Includes an AJAX front-end and goodies too. Please find [more information on NASfVI](legacy-website/html_de/nasfvi.html) in German.
 
-Here's a sample "posts list".
+You are *very* welcome to clone and contribute to these projects! :)
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+## The Other Website
 
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+Also there is my [other website](http://spartusch.github.com/legacy-website). Check it out to find more programs I've written like programs for Windows and a little compiler. This 'legacy' website is still maintained but updated infrequently.
