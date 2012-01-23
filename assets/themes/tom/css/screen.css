@@ -103,7 +103,7 @@ ul.posts span {
 	font-size: 110%;
 	text-align: justify;
 	width: 40em;
-	margin: 3em auto 2em auto;
+	margin: 3em auto;
 	line-height: 1.5em;
 }
 
@@ -137,18 +137,14 @@ ul.posts span {
 }
 
 .site .footer {
+	float: left;
 	font-size: 80%;
 	color: #666;
 	border-top: 4px solid #eee;
-	margin-top: 2em;
-	overflow: hidden;
-}
-
-.site .footer {
-	float: left;
-	margin-right: 3em;
-	width: 100%;
+	margin: 2em auto;
 	padding-top: 1em;
+	overflow: hidden;
+	width: 100%;
 }
 
 .contact {
@@ -175,18 +171,17 @@ ul.posts span {
 
 .site img.icon {
 	float: left;
-	margin: 1em;
+	margin: 0 1em;
 }
 
 .site img.icon-list {
 	float: left;
-	margin-top: 0.4em;
-	margin-right: 0.5em;
+	margin: 0.4em 0.5em;
 }
 
 .site img.screenshot {
 	float: right;
-	margin: 1em;
+	margin: 0 1em;
 }
 
 
