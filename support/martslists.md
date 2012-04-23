@@ -17,4 +17,7 @@ group: support
 * *Can Mart's Lists learn different suggestions for different lists?*   
   Yes. Suggestions and their intervals are always unique to each list.
 
+* *How can I reorder lists and items?*   
+	Tap on the action button in the upper left or right corner and select "Reorder Lines". You can also tap and hold on any list to enable the edit mode.
+
 {% include support_footer.md %}
