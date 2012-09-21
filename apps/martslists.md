@@ -6,6 +6,7 @@ short-descr: Lets you create and manage lists easily, can learn automatically if
 appstore-en: http://itunes.apple.com/en/app/marts-lists-are-smart-lists/id488513021
 appstore-de: http://itunes.apple.com/de/app/marts-lists-are-smart-lists/id488513021
 appstore-fr: http://itunes.apple.com/fr/app/marts-lists-are-smart-lists/id488513021
+appstore-id: 488513021
 ---
 
 {% include app_header.md %}
