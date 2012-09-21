@@ -3,6 +3,7 @@ layout: page
 title: Mart's Lists are smart lists
 group: support
 support-email: s.t.partusch+martslists@gmail.com
+appstore-id: 488513021
 ---
 
 {% include support_header.md %}
