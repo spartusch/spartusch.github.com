@@ -22,4 +22,7 @@ appstore-id: 488513021
 * *How can I reorder lists and items?*   
 	Tap on the action button in the upper left or right corner and select "Reorder Lines". You can also tap and hold on any list to enable the edit mode.
 
+* *Version 2.1 of Mart's Lists doesn't seem to work?*   
+	You might experience a problem with loading the lists upon Mart's Lists first launch in version 2.1. If you experience this please close the app and double tap the home button to reveal a list of apps on the bottom of your screen. Tap and hold on Mart's Lists icon until a minus sign appears. Please press this minus sign. Mart's Lists will work then. An update that fixes this issue has already been submitted to Apple and will be available soon.
+
 {% include support_footer.md %}
