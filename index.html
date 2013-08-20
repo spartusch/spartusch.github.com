@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Stefan Partusch</title>
+	<meta name="author" content="Stefan Partusch">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1><span id="first_name">Stefan</span> <span id="last_name">Partusch</span></h1>
+	<section>
+		<h2>Contact</h2>
+		<ul>
+			<li>LinkedIn: <a href="https://www.linkedin.com/in/stefanpartusch">in/stefanpartusch</a></li>
+			<li>Xing: <a href="https://www.xing.com/profile/Stefan_Partusch">profile/Stefan_Partusch</a></li>
+			<li>GitHub: <a href="https://github.com/spartusch">spartusch</a></li>
+			<li>Twitter: <a href="https://twitter.com/spartusch">@spartusch</a></li>
+			<li>E-Mail: <a href="mailto:s.t.partusch+hp@gmail.com">s.t.partusch+hp@gmail.com</a></li>
+			<li>Skype: <span>spartusch</span></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Master Thesis</h2>
+		<p>A client-server system to parse and answer questions in German using Prolog and Apache Lucene: <a href="https://github.com/spartusch/NASfVI">NASfVI</a></p>
+	</section>
+	<section>
+		<h2>Legacy Website</h2>
+		<p>My old, archived website: <a href="legacy-website/">legacy-website</a></p>
+	</section>
+	<script type="text/javascript">
+		function switchHighlight(otherId) {
+			return function() {
+				document.getElementById(otherId).className = "highlighted";
+				this.className = "";
+			}
+		}
+		document.getElementById("first_name").className = "highlighted";
+		document.getElementById("first_name").onmouseover = switchHighlight("last_name");
+		document.getElementById("last_name").onmouseover = switchHighlight("first_name");
+	</script>
+</body>
+</html>
