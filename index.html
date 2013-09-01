@@ -9,14 +9,15 @@
 <body>
 	<h1><span id="first_name">Stefan</span> <span id="last_name">Partusch</span></h1>
 	<section>
-		<h2>Contact</h2>
+		<h2>Profiles/Contact</h2>
 		<ul>
-			<li>LinkedIn: <a href="https://www.linkedin.com/in/stefanpartusch">in/stefanpartusch</a></li>
+			<li data-profile="public">LinkedIn: <a href="https://www.linkedin.com/in/stefanpartusch">in/stefanpartusch</a></li>
 			<li>Xing: <a href="https://www.xing.com/profile/Stefan_Partusch">profile/Stefan_Partusch</a></li>
-			<li>GitHub: <a href="https://github.com/spartusch">spartusch</a></li>
-			<li>Twitter: <a href="https://twitter.com/spartusch">@spartusch</a></li>
-			<li>E-Mail: <a href="mailto:s.t.partusch+hp@gmail.com">s.t.partusch+hp@gmail.com</a></li>
-			<li>Skype: <span>spartusch</span></li>
+			<li data-profile="public">Twitter: <a href="https://twitter.com/spartusch">@spartusch</a></li>
+			<li>Facebook: <a href="https://www.facebook.com/spartusch">spartusch</a></li>
+			<li data-profile="public">GitHub: <a href="https://github.com/spartusch">spartusch</a></li>
+			<li data-profile="public">E-Mail: <a href="mailto:s.t.partusch+hp@gmail.com">s.t.partusch+hp@gmail.com</a></li>
+			<li>Skype: <span class="username">spartusch</span></li>
 		</ul>
 	</section>
 	<section>
@@ -28,15 +29,27 @@
 		<p>My old, archived website: <a href="legacy-website/">legacy-website</a></p>
 	</section>
 	<script type="text/javascript">
-		function switchHighlight(otherId) {
+		function highlightById(id) {
 			return function() {
-				document.getElementById(otherId).className = "highlighted";
+				document.getElementById(id).className = "highlighted";
 				this.className = "";
 			}
 		}
-		document.getElementById("first_name").className = "highlighted";
-		document.getElementById("first_name").onmouseover = switchHighlight("last_name");
-		document.getElementById("last_name").onmouseover = switchHighlight("first_name");
+
+		function markPublicProfiles() {
+			var listElements = document.getElementsByTagName("li");
+			for (var i = listElements.length - 1; i >= 0; i--) {
+				var e = listElements[i];
+				if (e.getAttribute("data-profile") == "public") {
+					e.innerHTML += " <span class='public'>public</span>";
+				};
+			}
+		}
+
+		document.getElementById("first_name").onmouseover = highlightById("last_name");
+		document.getElementById("last_name").onmouseover = highlightById("first_name");
+		document.getElementById(["first_name", "last_name"][Math.round(Math.random())]).className = "highlighted";
+		markPublicProfiles();
 	</script>
 </body>
 </html>

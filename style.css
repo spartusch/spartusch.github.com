@@ -39,7 +39,6 @@ ul {
 }
 ul li:before {
 	content: "- ";
-	font-weight: bold;
 }
 
 section {
@@ -48,8 +47,14 @@ section {
 	border-left: 2px #aaa solid;
 }
 
-span {
+span.username {
 	font-weight: bold;
+}
+
+span.public {
+	font-size: 9px;
+	font-style: italic;
+	vertical-align: super;
 }
 
 a, a:visited {
