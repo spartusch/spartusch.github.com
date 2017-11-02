@@ -7,23 +7,20 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1><span id="first_name">Stefan</span> <span id="last_name">Partusch</span></h1>
+	<h1>Stefan Partusch</h1>
 
 	<section>
-		<h2>CS Interests</h2>
+		<h2>Software Development / Interests</h2>
 		<ul>
-			<li>Software Development</li>
+			<li>Backend and App Development</li>
 			<li>Financial Technology</li>
 			<li>Natural Language Processing</li>
-			<li>Machine Learning</li>
-			<li>Information Extraction</li>
 			<li>Enterprise Search</li>
 		</ul>
 	</section>
 
 	<section>
 		<h2>Certificates</h2>
-<!--		<h3>Technology</h3> -->
 		<ul>
 			<li><a href="certs/ocp_se7.pdf">Oracle Certified Professional, Java SE 7 Programmer</a>, Oracle</li>
 			<li><a href="certs/oca_se7.pdf">Oracle Certified Associate, Java SE 7 Programmer</a>, Oracle</li>
@@ -32,56 +29,16 @@
 			<li><a href="certs/rprog.pdf">R Programming</a>, Johns Hopkins University</li>
 			<li><a href="certs/FAST_ESP_CL.pdf">FAST ESP CL: Fundamentals and Advanced Development of Search Applications</a>, Fast Search &amp; Transfer, Inc</li>
 		</ul>
-<!--
-		<h3>Languages</h3>
-		<ul>
-			<li><a href="certs/tur_1_en.pdf">Turkish Beginner's Course 1</a>, Babbel</li>
-		</ul>
--->
 	</section>
 
 	<section>
-		<h2>Master Thesis</h2>
-		<p>A client-server system to parse and answer questions in German using Prolog and Apache Lucene: <a href="https://github.com/spartusch/NASfVI">NASfVI</a></p>
-	</section>
-
-	<section>
-		<h2>Profiles</h2>
+		<h2>Profiles and Contact</h2>
 		<ul>
-			<li>Xing: <a href="https://www.xing.com/profile/Stefan_Partusch">profile/Stefan_Partusch</a></li>
-			<li data-profile="public">LinkedIn: <a href="https://www.linkedin.com/in/stefanpartusch">in/stefanpartusch</a></li>
-			<li data-profile="public">GitHub: <a href="https://github.com/spartusch">spartusch</a></li>
-			<li data-profile="public">Flickr: <a href="https://www.flickr.com/photos/124934376@N07/">spartusch</a></li>
+			<li>Xing: <a href="https://www.xing.com/profile/Stefan_Partusch">Stefan_Partusch</a></li>
+			<li>LinkedIn: <a href="https://de.linkedin.com/in/spartusch">spartusch</a></li>
+			<li>GitHub: <a href="https://github.com/spartusch">spartusch</a> <span class='public'>public</span></li>
+			<li>Flickr: <a href="https://www.flickr.com/photos/124934376@N07/">spartusch</a> <span class='public'>public</span></li>
 		</ul>
 	</section>
-
-	<section>
-		<h2>Legacy Website</h2>
-		<p>I've started programming in school and wrote several programs of which some can be found on <a href="legacy-website/">my old website</a>.</p>
-	</section>
-
-	<script type="text/javascript">
-		function highlightById(id) {
-			return function() {
-				document.getElementById(id).className = "highlighted";
-				this.className = "";
-			}
-		}
-
-		function markPublicProfiles() {
-			var listElements = document.getElementsByTagName("li");
-			for (var i = listElements.length - 1; i >= 0; i--) {
-				var e = listElements[i];
-				if (e.getAttribute("data-profile") == "public") {
-					e.innerHTML += " <span class='public'>public</span>";
-				};
-			}
-		}
-
-		document.getElementById("first_name").onmouseover = highlightById("last_name");
-		document.getElementById("last_name").onmouseover = highlightById("first_name");
-		document.getElementById(["first_name", "last_name"][Math.round(Math.random())]).className = "highlighted";
-		markPublicProfiles();
-	</script>
 </body>
 </html>

@@ -1,23 +1,26 @@
 body {
 	background-color: white;
-	font: 15px helvetica, arial, clean, sans-serif;
+	font: 15px sans-serif;
 	color: black;
-	width: 530px;
-	margin: 50px auto;
-	border-right: 2px #aaa solid;
-	border-top: 2px #aaa solid;
+	max-width: 90%;
+	margin: 5% auto;
+	border: 2px #aaa solid;
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
 	box-shadow: 10px 10px 20px 0px #e8e8e8;
 }
 
-body:last-child {
-	border-bottom: 2px #aaa solid;
+@media (min-width: 650px) {
+	body {
+		width: 550px;
+		margin: 50px auto;
+	}
 }
 
 h1 {
-	margin-left: -50px;
 	color: #aaa;
+	padding: 10px 30px;
+	margin-bottom: 0px;
 }
 
 h2 {
@@ -56,7 +59,9 @@ ul li {
 section {
 	margin: 0;
 	padding: 10px 30px;
-	border-left: 2px #aaa solid;
+}
+section:last-child {
+	margin-bottom: 10px;
 }
 
 span.username {
